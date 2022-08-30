@@ -1,5 +1,6 @@
-## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
-### Original design by PapyElGringo,  modified by Chris Titus. 
+### Customização da distribuição Manjaro XFCE (https://manjaro.org) para se usar o Awesome Window Manager [AwesomeWM 4.3](https://awesomewm.org/)
+
+### Customização Original design by PapyElGringo,  modified by Chris Titus. 
 
 ## Baseado no titus-awesome
 
@@ -9,34 +10,22 @@ Esta fork é apenas uma tentativa pessoal de melhorar meu modo de trabalho, apre
 
 #### Manjaro XFCE
 
-Todas as minhas ações foram  feitas em uma instalação do manjaro XFCE, mas devem funcionar para outras distros baseadas em Arch
-
-Deixar os seguintes repos funcionais: criarei um script para isso
-    yay
-    flatpack
-    AUR
-
+Todas minhas configuração foram sobre a base do Manjaro XFCE, com certeza deve funcionar em outras distros baseadas em Arch, mas alguns pacotes adicionais devem ser encessários.
 
 # Instalar os pacotes:
 
-Tenho que atualizar esse comando apra meu uso mas segue aqui todos os programas q devo lembrar de instalar para o funcionamento completo do meu projeto:
+Antes de instalar os pacotes deve-se instalar o yay. Para isso siga as instruções desse site: (https://www.linuxcapable.com/how-to-install-yay-aur-helper-on-manjaro-21-linux/)
 
+Instalar os pacotes necessários com esses comandos:
+Com yay:
 ```
-yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager qt5-styleplugins papirus-icon-theme -y
+yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme -y
 ```
-Programas necessários que o script não instala
-
-i3lock e i3lock-fancy
-pnmixer 
-discord
-thunderbird
-libreoffice
-nitrogen
-spotify via flatpack -- no caso escolhi via flatpack, não sei se vindo de outro repo o comando vai ser o mesmo.
-
-Com esses programas cada tag (ou área de trabalhom irá abrir o programa correspondente)
-
-é possível configurar para ter mais áres de trabalho e masi tipos de programa.
+Com pacman
+```
+sudo pacman -S pnmixer discord thunderbird libreoffice nitrogen i3lock pamac-tray-icon-plasma
+```
+Para instalar o i3lock-fancy siga os passos do link: (https://github.com/meskarune/i3lock-fancy)
 
 
 #### Program list
