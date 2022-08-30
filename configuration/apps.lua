@@ -35,7 +35,7 @@ return {
     'pamac-tray', -- starts pamac tray
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     --'xfce4-power-manager', -- Power manager
-    -- 'flameshot',
+    'flameshot',
     -- 'synology-drive -minimized',
     -- qq 'steam -silent',
     -- 'feh --randomize --bg-fill ~/.wallpapers/*',
