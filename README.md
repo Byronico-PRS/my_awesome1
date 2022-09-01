@@ -19,13 +19,25 @@ Antes de instalar os pacotes deve-se instalar o yay. Para isso siga as instruç�
 Instalar os pacotes necessários com esses comandos:
 Com yay:
 ```
-yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme -y
-```
-Com pacman
-```
-sudo pacman -S pnmixer discord thunderbird libreoffice nitrogen i3lock pamac-tray-icon-plasma
+yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme dropbox -y
 ```
 Para instalar o i3lock-fancy siga os passos do link: (https://github.com/meskarune/i3lock-fancy)
+
+Pacotes condizentes com os atalhos:
+```
+yay -S pnmixer discord thunderbird libreoffice nitrogen i3lock pamac-tray-icon-plasma nemo 
+```
+Apps utilitários
+```
+yay -S obs-studio okular 
+```
+
+Apps para música
+```
+yay -S musescore reaper cadence helm minuet jack2 reaper
+```
+
+
 
 
 #### Program list
@@ -44,8 +56,7 @@ Para instalar o i3lock-fancy siga os passos do link: (https://github.com/meskaru
 - [flameshot](https://flameshot.org/) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the apps.lua file
 - [pnmixer](https://github.com/nicklan/pnmixer) Audio Tray icon that is in debian repositories and is easily installed on arch through AUR.
 - [network-manager-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) nm-applet is a Network Manager Tray display from GNOME.
-- [xfce4-power-manager](https://docs.xfce.org/xfce/xfce4-power-manager/start) XFCE4's power manager is excellent and a great way of dealing with sleep, monitor timeout, and other power management features.
-
+- 
 ### 2) Clonar os arquivos de configuração:
 
 Arch-Based Installs

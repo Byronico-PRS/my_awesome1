@@ -27,7 +27,7 @@ return {
   -- List of apps to start once on start-up
   run_on_start_up = {
     'picom --config ' .. filesystem.get_configuration_dir() .. '/configuration/picom.conf',
-    'nitrogen --restore &',
+    'nitrogen --restore &', --restore bg configs
     'nm-applet --indicator', -- wifi
     'pnmixer', -- shows an audiocontrol applet in systray when installed.
     --'blueberry-tray', -- Bluetooth tray icon
@@ -35,7 +35,9 @@ return {
     'pamac-tray', -- starts pamac tray
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     --'xfce4-power-manager', -- Power manager
-    'flameshot',
+    'flameshot', --screenshot program
+    'xfce4-clipman', --clipman tray
+    'dropbox', --start dropbox client
     -- 'synology-drive -minimized',
     -- qq 'steam -silent',
     -- 'feh --randomize --bg-fill ~/.wallpapers/*',
