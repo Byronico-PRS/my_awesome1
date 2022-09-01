@@ -36,11 +36,7 @@ Apps para música
 ```
 yay -S musescore reaper cadence helm minuet jack2 reaper
 ```
-
-
-
-
-#### Program list
+#### Lista de programas para sistema
 
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
 - [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
@@ -65,7 +61,7 @@ git clone https://github.com/Byronico-PRS/my_awesome1 ~/.config/awesome
 ```
 ### 3) Ligar configurações do Rofi com os arquivos de configuração já baixados
 
-Set Rofi Theme
+Configurações do menu Rofi
 
 ```
 mkdir -p ~/.config/rofi
@@ -74,7 +70,7 @@ sed -i '/@import/c\@import "'$HOME'/.config/awesome/theme/sidebar.rasi"' ~/.conf
 
 ```
 
-### 4) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
+### 4) Manter o mesmo tema para aplicações Qt/KDE e GTK, arruma os indicadores perdidos
 
 First install  `qt5-styleplugins` (arch) and add this to the bottom of your `/etc/environment`
 
