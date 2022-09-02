@@ -16,25 +16,24 @@ Todas minhas configuração foram sobre a base do Manjaro XFCE, com certeza deve
 
 Antes de instalar os pacotes deve-se instalar o yay. Para isso siga as instruções desse site: (https://www.linuxcapable.com/how-to-install-yay-aur-helper-on-manjaro-21-linux/)
 
-Instalar os pacotes necessários com esses comandos:
-Com yay:
-```
-yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme dropbox -y
-```
-Para instalar o i3lock-fancy siga os passos do link: (https://github.com/meskarune/i3lock-fancy)
+###Instalar os pacotes necessários com esses comandos:
 
-Pacotes condizentes com os atalhos:
+####Com yay:
 ```
-yay -S pnmixer discord thunderbird libreoffice nitrogen i3lock pamac-tray-icon-plasma nemo 
+yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme i3lock i3lock-fancy-dualmonitor -y
 ```
-Apps utilitários
+####Pacotes condizentes com os atalhos:
 ```
-yay -S obs-studio okular 
+yay -S pnmixer discord thunderbird libreoffice nitrogen pamac-tray-icon-plasma nemo 
+```
+####Apps utilitários
+```
+yay -S obs-studio okular dropbox github-desktop-bin code
 ```
 
-Apps para música
+####Apps para música
 ```
-yay -S musescore reaper cadence helm minuet jack2 reaper
+yay -S musescore reaper cadence helm minuet jack2
 ```
 #### Lista de programas para sistema
 
@@ -77,6 +76,17 @@ First install  `qt5-styleplugins` (arch) and add this to the bottom of your `/et
 ```bash
 XDG_CURRENT_DESKTOP=Unity
 QT_QPA_PLATFORMTHEME=gtk2
+```
+### Ativar numlock no greeter
+
+Com o pacote numlockx já instalado editar o o arquivo:
+
+```
+sudo nano /etc/lightdm/lightdm.conf
+```
+```
+[Seat:*]
+greeter-setup-script=/usr/bin/numlockx on
 ```
 
 The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
