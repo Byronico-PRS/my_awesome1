@@ -16,9 +16,9 @@ Todas minhas configuração foram sobre a base do Manjaro XFCE, com certeza deve
 
 Antes de instalar os pacotes deve-se instalar o yay. Para isso siga as instruções desse site: (https://www.linuxcapable.com/how-to-install-yay-aur-helper-on-manjaro-21-linux/)
 
-###Instalar os pacotes necessários com esses comandos:
+### Instalar os pacotes necessários com esses comandos:
 
-#### Com yay:
+#### Pacotes de tema:
 ```
 yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme i3lock i3lock-fancy-dualmonitor -y
 ```
