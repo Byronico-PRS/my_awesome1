@@ -26,12 +26,12 @@ yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearan
 ```
 yay -S pnmixer discord thunderbird libreoffice nitrogen pamac-tray-icon-plasma nemo 
 ```
-#### Apps utilitários
+#### Apps utilitários e jogos:
 ```
-yay -S obs-studio okular dropbox github-desktop-bin code
+yay -S obs-studio okular dropbox github-desktop-bin code scid
 ```
 
-#### Apps para música
+#### Apps para música:
 ```
 yay -S musescore reaper cadence helm minuet jack2
 ```
@@ -77,6 +77,8 @@ First install  `qt5-styleplugins` (arch) and add this to the bottom of your `/et
 XDG_CURRENT_DESKTOP=Unity
 QT_QPA_PLATFORMTHEME=gtk2
 ```
+
+The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
 ### Ativar numlock no greeter
 
 Com o pacote numlockx já instalado editar o o arquivo:
@@ -88,8 +90,31 @@ sudo nano /etc/lightdm/lightdm.conf
 [Seat:*]
 greeter-setup-script=/usr/bin/numlockx on
 ```
+## Configuração de audio
 
-The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
+Permitir ao Jack Realtime Scheduling
+
+### 1 Editar arquivo de configuração:
+
+```
+sudo nano /etc/security/limits.conf
+```
+Este arquivo deve conter pelo menos essas duas linhas:
+```
+@audio   -  rtprio     95
+@audio   -  memlock    unlimited
+```
+### 2 Criar o grupo de audio
+
+Na instalação do seu sistema o grupo de audio pode já ter sido criado, caso isso não tenha ocorrido crie o grupo e adicione seu usuário:
+```
+groupadd audio
+usermod -a -G audio ´usuario´
+```
+### 3 Reinicie o computador
+
+Reinicie e as configurações de áudio já devem funcionar.
+Verifique no Cadence no System Checks se o usuário está no grupo de áudio.
 
 ### 5) Read the documentation
 
