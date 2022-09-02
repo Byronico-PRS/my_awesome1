@@ -18,20 +18,20 @@ Antes de instalar os pacotes deve-se instalar o yay. Para isso siga as instruç�
 
 ###Instalar os pacotes necessários com esses comandos:
 
-####Com yay:
+#### Com yay:
 ```
 yay -S awesome rofi picom xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot network-manager-applet  qt5-styleplugins papirus-icon-theme i3lock i3lock-fancy-dualmonitor -y
 ```
-####Pacotes condizentes com os atalhos:
+#### Pacotes condizentes com os atalhos:
 ```
 yay -S pnmixer discord thunderbird libreoffice nitrogen pamac-tray-icon-plasma nemo 
 ```
-####Apps utilitários
+#### Apps utilitários
 ```
 yay -S obs-studio okular dropbox github-desktop-bin code
 ```
 
-####Apps para música
+#### Apps para música
 ```
 yay -S musescore reaper cadence helm minuet jack2
 ```
