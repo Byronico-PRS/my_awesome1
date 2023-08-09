@@ -18,10 +18,10 @@ return {
     region_screenshot = 'flameshot gui',
     delayed_screenshot = 'flameshot screen -p ~/Imagens -d 5000',
     browser = 'brave',
-    editor = 'code', -- gui text editor
+    editor = 'codium', -- gui text editor
     social = 'discord',
     game = 'scid',
-    files = 'nemo',
+    files = 'thunar',
     music = 'com.spotify.Client' 
   },
   -- List of apps to start once on start-up
@@ -32,12 +32,12 @@ return {
     'pnmixer', -- shows an audiocontrol applet in systray when installed.
     --'blueberry-tray', -- Bluetooth tray icon
     'numlockx on', -- enable numlock
-    'pamac-tray', -- starts pamac tray
-    '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
-    --'xfce4-power-manager', -- Power manager
+    -- 'pamac-tray', -- starts pamac tray
+    -- '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
+    'xfce4-power-manager', -- Power manager
     'flameshot', --screenshot program
     'xfce4-clipman', --clipman tray
-    'dropbox', --start dropbox client
+    --'dropbox', --start dropbox client
     -- 'synology-drive -minimized',
     -- qq 'steam -silent',
     -- 'feh --randomize --bg-fill ~/.wallpapers/*',

@@ -158,7 +158,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
-    'a',
+    'q',
     function()
       awful.util.spawn(apps.default.mail)
     end,
