@@ -28,12 +28,12 @@ local tags = {
     defaultApp = apps.default.files,
     screen = 1
   },
-  {
-    icon = icons.code,
-    type = 'code',
-    defaultApp = apps.default.editor,
-    screen = 1
-    },
+ {
+   icon = icons.code,
+   type = 'code',
+   defaultApp = apps.default.editor,
+   screen = 1
+   },
   {
     icon = icons.social,
     type = 'social',

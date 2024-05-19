@@ -156,14 +156,14 @@ local globalKeys =
     end,
     {description = 'Open a office suite', group = 'launcher'}
   ),
-  awful.key(
-    {modkey},
-    'q',
-    function()
-      awful.util.spawn(apps.default.mail)
-    end,
-    {description = 'Open a mail client', group = 'launcher'}
-  ),
+--  awful.key(
+--    {modkey},
+--    'q',
+--    function()
+--      awful.util.spawn(apps.default.mail)
+--    end,
+--    {description = 'Open a mail client', group = 'launcher'}
+--  ),
   awful.key(
     {modkey},
     'g',
@@ -436,6 +436,7 @@ local globalKeys =
     end,
     {description = 'open a filemanager', group = 'launcher'}
   )
+  -- Create a shortcut to open the btop window
   -- Emoji Picker
 --  awful.key(
  --   {modkey},

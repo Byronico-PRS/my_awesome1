@@ -17,7 +17,7 @@ return {
     screenshot = 'flameshot screen -p ~/Imagens',
     region_screenshot = 'flameshot gui',
     delayed_screenshot = 'flameshot screen -p ~/Imagens -d 5000',
-    browser = 'brave',
+    browser = 'flatpak run com.brave.Browser',
     editor = 'codium', -- gui text editor
     social = 'discord',
     game = 'scid',
@@ -44,6 +44,7 @@ return {
     --'/usr/bin/variety',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
-    '~/.config/awesome/configuration/awspawn' -- Spawn "dirty" apps that can linger between sessions
+    '~/.config/awesome/configuration/awspawn', -- Spawn "dirty" apps that can linger between sessions
+    'nextcloud'
   }
 }
