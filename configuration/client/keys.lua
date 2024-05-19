@@ -16,7 +16,7 @@ local clientKeys =
   ),
   awful.key(
     {modkey},
-    'q',
+    'a',
     function(c)
       c:kill()
     end,
